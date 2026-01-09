@@ -8,7 +8,7 @@
 - When two adjacent users are both locked, no one can slip between them and an “add friend” icon appears for friend requests.
 - Friends who meet get a yellow outline indicator and auto-lock until each unlocks.
 
-Backend README: https://github.com/dimell94/agnostik-app/blob/main/README.md
+Backend README: https://github.com/dimell94/agnostik-app#README.md
 
 ## Requirements
 - Node.js 20+, npm
