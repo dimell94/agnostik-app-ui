@@ -17,6 +17,7 @@ Backend README: https://github.com/dimell94/agnostik-app#readme
 1) Ensure backend is running (per backend README).
 2) Frontend:
    ```bash
+   git clone https://github.com/dimell94/agnostik-app-ui.git && cd agnostik-app-ui`
    npm install
    npm run dev
    ```
