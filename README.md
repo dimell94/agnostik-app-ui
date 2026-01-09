@@ -14,16 +14,14 @@ Backend README: https://github.com/dimell94/agnostik-app#readme
 - Node.js 20+, npm
 
 ## Quick start
-1) Ensure backend is running (per backend README).
-2) Frontend:
+- Ensure backend is running (per backend README).
+- Frontend:
    ```bash
    git clone https://github.com/dimell94/agnostik-app-ui.git && cd agnostik-app-ui`
    npm install
    npm run dev
    ```
-   - Build: `npm run build` → `dist/`
-   - Preview: `npm run preview`
-   - Lint: `npm run lint`
+- App serves at `http://localhost:5173`
 
 ## Configuration
 - Dev proxy in `vite.config.ts` forwards `/api` and `/ws` to `http://localhost:8080`; adjust `target` if backend host/port differ.
