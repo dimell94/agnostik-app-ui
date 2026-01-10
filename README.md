@@ -1,4 +1,5 @@
 # Agnostik Frontend
+### Stack: React (TypeScript) · Vite · Tailwind CSS · STOMP/SockJS 
 
 - Real-time, corridor-style social network where users text live with their immediate neighbors.
 - After register/login, each user enters a shared corridor; the text area sits center stage and can be focused/unfocused via click or Esc.
@@ -13,19 +14,14 @@ Backend README: https://github.com/dimell94/agnostik-app#readme
 ## Requirements
 - Node.js 20+, npm
 
-## Quick start
+## Run via the CLI
 - Ensure backend is running (per backend README).
 - Frontend:
    ```bash
-   git clone https://github.com/dimell94/agnostik-app-ui.git && cd agnostik-app-ui`
+   git clone https://github.com/dimell94/agnostik-app-ui.git 
+   cd agnostik-app-ui
    npm install
    npm run dev
    ```
-- App serves at `http://localhost:5173`
+- App serves at http://localhost:5173
 
-## Configuration
-- Dev proxy in `vite.config.ts` forwards `/api` and `/ws` to `http://localhost:8080`; adjust `target` if backend host/port differ.
-- Auth token stored in `localStorage` as `authToken` and sent as Bearer to REST/STOMP.
-
-## WebSocket
-- STOMP connects to `/ws`, subscribes to `/user/queue/snapshot`, and publishes text updates to `/app/text`.
